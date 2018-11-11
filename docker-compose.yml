@@ -21,8 +21,6 @@ services:
     image: commentbox/commentbox.io-analytics
     command: nodemon start.js
     env_file: .env.local
-    ports:
-    - '3000:3000'
     volumes:
     - .:/usr/src/app
     - /usr/src/app/node_modules
